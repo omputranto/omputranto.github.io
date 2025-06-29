@@ -24,7 +24,7 @@
 
   <!-- Logo Favicon -->
   <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
-    <title>Om Putranto - Konsultan Asuransi Profesional</title>
+    <title>Om Putranto - Financial Advisor</title>
 
     <link rel="canonical" href="index.html" />
     <style amp-boilerplate>
@@ -1748,6 +1748,58 @@
         margin: 0;
         color: #ffffff;
       }
+       /* Responsive Testimonial Styles */
+  .testimonial-card {
+    padding: 20px;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    height: 450px; /* Set a fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .client-photo {
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: block;
+    max-width: 120px; /* Fix size of the photo */
+    height: 120px;
+    object-fit: cover;
+  }
+
+  .mbr-text {
+    flex-grow: 1; /* Ensure text grows to fill space */
+  }
+
+  /* Responsiveness */
+  @media (max-width: 767px) {
+    .client-photo {
+      max-width: 80px;
+      height: 80px;
+    }
+    .testimonial-card {
+      height: auto; /* Allow height to adjust for smaller screens */
+    }
+    .mbr-col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .mbr-col-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
     </style>
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -1782,18 +1834,6 @@
           <a class="display-7" href="#faq">FAQ</a>
         </div>
 
-        <div class="navbar-buttons mbr-section-btn align-center">
-          <a
-            class="btn btn-sm btn-primary display-4"
-            href="https://mobirise.com/mobirise-free-win.zip"
-            >DOWNLOAD FOR WIN</a
-          >
-          <a
-            class="btn btn-sm btn-primary display-4"
-            href="https://mobirise.com/mobirise-free-mac.zip"
-            >DOWNLOAD FOR MAC</a
-          >
-        </div>
       </div>
     </amp-sidebar>
     <section class="menu cid-qEUD8zWk3F" id="menu1-g">
@@ -1828,8 +1868,8 @@
   <div class="mbr-container">
     <div class="mbr-row mbr-justify-content-center">
       <amp-img src="assets/images/logo.png" 
-               width="300" 
-               height="300" 
+               width="250" 
+               height="250" 
                layout="fixed"
                class="whatsapp-icon"
                alt="WhatsApp Icon">
@@ -1840,7 +1880,7 @@
           Lindungi Masa Depan Keluarga Anda
         </h1>
         <p class="mbr-text mbr-fonts-style display-7">
-          Saya Om Putranto, konsultan asuransi profesional dengan 10+ tahun pengalaman<br>
+          Saya Om Putranto, <strong>Financial Advisor</strong> dengan 10+ tahun pengalaman<br>
           membantu 500+ keluarga dan bisnis di Indonesia mendapatkan perlindungan terbaik.
         </p>
         
@@ -1900,7 +1940,7 @@
       </div>
       <div class="text-block mbr-col-sm-12 mbr-col-md-6">
         <h4 class="card-title mbr-fonts-style align-center mbr-light display-2">
-          Solusi Asuransi Jiwa Terbaik untuk Keluarga Indonesia
+          Solusi Asuransi Terbaik untuk Masa DepanKeluarga Anda
         </h4>
         <p class="mbr-text mbr-fonts-style align-center display-7">
           Di tengah ketidakpastian ekonomi saat ini, memiliki perlindungan asuransi jiwa 
@@ -1928,84 +1968,6 @@
             </amp-img>
             KONSULTASI VIA WHATSAPP
           </a>
-          <a class="btn btn-md btn-white-outline display-4" href="#testimonials" style="margin-left: 10px;">
-            LIHAT TESTIMONI KLIEN
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    <section class="mbr-section content1 cid-qEs7JHpDsu" id="content1-4">
-      <div class="mbr-container">
-        <h2 class="mbr-title align-center mbr-fonts-style mbr-bold display-2">
-          My Works
-        </h2>
-      </div>
-    </section>
-
-<section class="features2 mbr-section cid-qEs7LW7q9b" id="services-list">
-  <div class="container">
-    <div class="mbr-row mbr-justify-content-center">
-      <!-- Life Insurance -->
-      <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 insurance-card">
-        <div class="card-wrapper">
-          <div class="card-img">
-            <amp-img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
-                    layout="responsive" width="349" height="233" alt="Life Insurance">
-            </amp-img>
-          </div>
-          <div class="card-box">
-            <amp-img src="https://cdn-icons-png.flaticon.com/512/3059/3059518.png" 
-                    width="60" height="60" layout="fixed" class="protection-icon" alt="Life Insurance Icon"></amp-img>
-            <h4 class="card-title mbr-fonts-style align-center mbr-light display-2">Life Insurance</h4>
-            <p class="mbr-text mbr-fonts-style align-center display-7">Secure your family's financial future with customized life insurance plans that provide peace of mind.</p>
-            <div class="mbr-section-btn align-center">
-              <a class="btn btn-sm btn-primary display-4" href="#contact">LEARN MORE</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Health Insurance -->
-      <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 insurance-card">
-        <div class="card-wrapper">
-          <div class="card-img">
-            <amp-img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
-                    layout="responsive" height="233" width="349" alt="Health Insurance">
-            </amp-img>
-          </div>
-          <div class="card-box">
-            <amp-img src="https://cdn-icons-png.flaticon.com/512/2964/2964434.png" 
-                    width="60" height="60" layout="fixed" class="protection-icon" alt="Health Insurance Icon"></amp-img>
-            <h4 class="card-title mbr-fonts-style align-center mbr-light display-2">Health Insurance</h4>
-            <p class="mbr-text mbr-fonts-style align-center display-7">Comprehensive medical coverage options to protect you and your loved ones from unexpected healthcare costs.</p>
-            <div class="mbr-section-btn align-center">
-              <a class="btn btn-sm btn-primary display-4" href="#contact">LEARN MORE</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Property Insurance -->
-      <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 insurance-card">
-        <div class="card-wrapper">
-          <div class="card-img">
-            <amp-img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
-                    layout="responsive" height="233" width="349" alt="Property Insurance">
-            </amp-img>
-          </div>
-          <div class="card-box">
-            <amp-img src="https://cdn-icons-png.flaticon.com/512/2948/2948036.png" 
-                    width="60" height="60" layout="fixed" class="protection-icon" alt="Property Insurance Icon"></amp-img>
-            <h4 class="card-title mbr-fonts-style align-center mbr-light display-2">Property Insurance</h4>
-            <p class="mbr-text mbr-fonts-style align-center display-7">Protect your home, vehicles, and valuable assets with tailored property insurance solutions.</p>
-            <div class="mbr-section-btn align-center">
-              <a class="btn btn-sm btn-primary display-4" href="#contact">LEARN MORE</a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -2024,22 +1986,38 @@
   <div class="container">
     <div class="mbr-row mbr-justify-content-center">
       <!-- Testimonial 1 -->
-<div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4">
-  <div class="card-wrapper testimonial-card">
-          <amp-img src="https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80&facepad=3" 
-                  width="400" height="400" layout="fixed" class="client-photo" alt="Agus Wijaya - Client"></amp-img>
-    <p class="mbr-text mbr-fonts-style align-center display-7">"Om Putranto helped me find the perfect life insurance policy for my family. His knowledge and patience made the process so easy. We now have peace of mind knowing we're protected."</p>
-    <h4 class="card-title mbr-fonts-style align-center mbr-light display-7">- Budi Santoso</h4>
-    <p class="mbr-text mbr-fonts-style align-center display-4">Jakarta</p>
-  </div>
-</div>
+      <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4">
+        <div class="card-wrapper testimonial-card">
+          <amp-img src="https://images.unsplash.com/photo-1545167622-3a6ac756afa4" 
+                  width="1" 
+                  height="1" 
+                  layout="responsive"
+                  class="client-photo"
+                  alt="Budi Santoso - Klien"
+                  sizes="(max-width: 479px) 80vw,
+                         (max-width: 767px) 50vw,
+                         400px">
+          </amp-img>
+          <p class="mbr-text mbr-fonts-style align-center display-7">"Om Putranto membantu saya menemukan polis asuransi jiwa yang sempurna untuk keluarga. Pengetahuan dan kesabarannya membuat prosesnya sangat mudah. Kami sekarang punya ketenangan pikiran."</p>
+          <h4 class="card-title mbr-fonts-style align-center mbr-light display-7">- Budi Santoso</h4>
+          <p class="mbr-text mbr-fonts-style align-center display-4">Jakarta</p>
+        </div>
+      </div>
       
       <!-- Testimonial 2 -->
       <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4">
         <div class="card-wrapper testimonial-card">
-          <amp-img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80&facepad=3" 
-                  width="400" height="400" layout="fixed" class="client-photo" alt="Siti Rahayu - Client"></amp-img>
-          <p class="mbr-text mbr-fonts-style align-center display-7">"As a small business owner, I needed comprehensive coverage. Om explained all my options clearly and found me a policy that fits both my needs and budget. Highly recommended!"</p>
+          <amp-img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
+                  width="1"
+                  height="1"
+                  layout="responsive"
+                  class="client-photo"
+                  alt="Siti Rahayu - Klien"
+                  sizes="(max-width: 479px) 80vw,
+                         (max-width: 767px) 50vw,
+                         400px">
+          </amp-img>
+          <p class="mbr-text mbr-fonts-style align-center display-7">"Sebagai pemilik bisnis kecil, saya butuh perlindungan komprehensif. Om menjelaskan semua opsi dengan jelas dan menemkan polis yang sesuai kebutuhan dan budget saya. Sangat direkomendasikan!"</p>
           <h4 class="card-title mbr-fonts-style align-center mbr-light display-7">- Siti Rahayu</h4>
           <p class="mbr-text mbr-fonts-style align-center display-4">Bandung</p>
         </div>
@@ -2048,9 +2026,17 @@
       <!-- Testimonial 3 -->
       <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4">
         <div class="card-wrapper testimonial-card">
-          <amp-img src="https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80&facepad=3" 
-                  width="400" height="400" layout="fixed" class="client-photo" alt="Agus Wijaya - Client"></amp-img>
-          <p class="mbr-text mbr-fonts-style align-center display-7">"When I needed to update my health insurance, Om was incredibly helpful. He took the time to understand my specific health needs and found me better coverage at a lower cost."</p>
+          <amp-img src="https://images.unsplash.com/photo-1545167622-3a6ac756afa4"
+                  width="1"
+                  height="1"
+                  layout="responsive"
+                  class="client-photo"
+                  alt="Agus Wijaya - Klien"
+                  sizes="(max-width: 479px) 80vw,
+                         (max-width: 767px) 50vw,
+                         400px">
+          </amp-img>
+          <p class="mbr-text mbr-fonts-style align-center display-7">"Ketika saya perlu memperbarui asuransi kesehatan, Om sangat membantu. Dia meluangkan waktu untuk memahami kebutuhan kesehatan saya dan menemkan perlindungan lebih baik dengan biaya lebih murah."</p>
           <h4 class="card-title mbr-fonts-style align-center mbr-light display-7">- Agus Wijaya</h4>
           <p class="mbr-text mbr-fonts-style align-center display-4">Surabaya</p>
         </div>
